@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentoría Académica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mentoría Académica</h1>
+        <p>Conexión entre profesor y alumno para reforzamiento</p>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>¿Cómo funciona?</h2>
+            <p>Un espacio diseñado para que los alumnos puedan solicitar reforzamiento en los temas que necesitan, y los profesores los guíen de manera personalizada.</p>
+        </section>
+
+        <section class="formulario">
+            <h2>Solicitar Mentoría</h2>
+            <form id="mentoriaForm">
+                <label for="nombre">Nombre del alumno:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="materia">Materia a reforzar:</label>
+                <input type="text" id="materia" name="materia" required>
+
+                <label for="mensaje">Describe tu necesidad:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <button type="submit">Enviar solicitud</button>
+            </form>
+            <p id="respuesta"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mentoría Académica - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
